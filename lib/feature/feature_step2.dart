@@ -31,12 +31,6 @@ class _FeatureStep2State extends State<FeatureStep2> {
     );
   }
 
-  void _handleNavigateFeatureIndex() {
-    if (context.mounted) {
-      context.router.navigate(const router_gr.FeatureIndex());
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -50,10 +44,6 @@ class _FeatureStep2State extends State<FeatureStep2> {
         TextButton(
           onPressed: _handleRemoveStep1,
           child: const Text('Remove step 1'),
-        ),
-        TextButton(
-          onPressed: _handleNavigateFeatureIndex,
-          child: const Text('Navigate to FeatureIndex'),
         ),
       ],
     );
